@@ -18,14 +18,15 @@
     <div class="down">
       <div class="ranking bg-color-black">
         <span>
-          <icon name="chart-pie" class="text-icon"></icon>
+          <i class="iconfont icon-31paixingbang colorBlue"></i>
+          <!-- <icon name="chart-pie" class="text-icon"></icon> -->
         </span>
         <span class="text mx-2 mb-1 pl-3">精彩活动热度排行榜</span>
         <dv-scroll-ranking-board class="dv-scr-rank-board mt-1 " :config="ranking" />
       </div>
       <div class="percent">
         <div class="item bg-color-black">
-          <span>今日任务通过率</span>
+          <span>今日会议进程</span>
           <CenterChart
             :id="rate[0].id"
             :tips="rate[0].tips"
@@ -33,7 +34,7 @@
           />
         </div>
         <div class="item bg-color-black">
-          <span>今日任务达标率</span>
+          <span>今日热度</span>
           <CenterChart
             :id="rate[1].id"
             :tips="rate[1].tips"
@@ -184,7 +185,7 @@ export default {
       rate: [
         {
           id: 'centerRate1',
-          tips: 60,
+          tips: 88,
           colorData: {
             textStyle: '#3fc0fb',
             series: {
@@ -198,7 +199,7 @@ export default {
         },
         {
           id: 'centerRate2',
-          tips: 40,
+          tips: 100,
           colorData: {
             textStyle: '#67e0e3',
             series: {

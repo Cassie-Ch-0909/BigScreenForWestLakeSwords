@@ -3,7 +3,8 @@
     <div class="bg-color-black">
       <div class="d-flex pt-2 pl-2">
         <span>
-          <icon name="chart-line" class="text-icon"></icon>
+          <i class="iconfont icon-chengguofabu colorBlue" style="font-size: 20px; padding-bottom:10px;"></i>
+          <!-- <icon name="chart-line" class="text-icon"></icon> -->
         </span>
         <div class="d-flex">
           <span class="text mx-2">成果发布</span>
